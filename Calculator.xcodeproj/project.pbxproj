@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E874A8C1C19313100D34279 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E874A8B1C19313100D34279 /* CalculatorBrain.swift */; };
 		3EEE7F401C13A3B80093AA57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEE7F3F1C13A3B80093AA57 /* AppDelegate.swift */; };
 		3EEE7F421C13A3B80093AA57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEE7F411C13A3B80093AA57 /* ViewController.swift */; };
 		3EEE7F451C13A3B80093AA57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEE7F431C13A3B80093AA57 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E874A8B1C19313100D34279 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		3EEE7F3A1C13A3B80093AA57 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEE7F3E1C13A3B80093AA57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EEE7F3F1C13A3B80093AA57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		3EEE7F311C13A3B80093AA57 = {
 			isa = PBXGroup;
 			children = (
+				3E874A8B1C19313100D34279 /* CalculatorBrain.swift */,
 				3EEE7F3C1C13A3B80093AA57 /* Calculator */,
 				3EEE7F521C13A3B80093AA57 /* CalculatorTests */,
 				3EEE7F3B1C13A3B80093AA57 /* Products */,
@@ -77,11 +80,8 @@
 		3EEE7F3C1C13A3B80093AA57 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				3EEE7F3F1C13A3B80093AA57 /* AppDelegate.swift */,
 				3EEE7F411C13A3B80093AA57 /* ViewController.swift */,
 				3EEE7F431C13A3B80093AA57 /* Main.storyboard */,
-				3EEE7F461C13A3B80093AA57 /* Images.xcassets */,
-				3EEE7F481C13A3B80093AA57 /* LaunchScreen.xib */,
 				3EEE7F3D1C13A3B80093AA57 /* Supporting Files */,
 			);
 			path = Calculator;
@@ -90,6 +90,9 @@
 		3EEE7F3D1C13A3B80093AA57 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3EEE7F481C13A3B80093AA57 /* LaunchScreen.xib */,
+				3EEE7F461C13A3B80093AA57 /* Images.xcassets */,
+				3EEE7F3F1C13A3B80093AA57 /* AppDelegate.swift */,
 				3EEE7F3E1C13A3B80093AA57 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -156,7 +159,9 @@
 		3EEE7F321C13A3B80093AA57 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Self;
 				TargetAttributes = {
 					3EEE7F391C13A3B80093AA57 = {
@@ -212,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E874A8C1C19313100D34279 /* CalculatorBrain.swift in Sources */,
 				3EEE7F421C13A3B80093AA57 /* ViewController.swift in Sources */,
 				3EEE7F401C13A3B80093AA57 /* AppDelegate.swift in Sources */,
 			);
@@ -276,6 +282,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -344,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jialic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -354,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jialic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -372,6 +381,7 @@
 				);
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jialic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
@@ -387,6 +397,7 @@
 				);
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jialic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
@@ -411,6 +422,7 @@
 				3EEE7F5B1C13A3B80093AA57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EEE7F5C1C13A3B80093AA57 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +431,7 @@
 				3EEE7F5E1C13A3B80093AA57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
